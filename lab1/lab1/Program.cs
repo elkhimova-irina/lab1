@@ -1,6 +1,6 @@
 
 using System;
-
+using System.Text;
 
 
 
@@ -12,10 +12,33 @@ namespace lab1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Elkhimova Irina ICS5-33B\n");
-            double A = ReadDouble("Write coefficient A: ");
-            double B = ReadDouble("Write coefficient B: ");
-            double C = ReadDouble("Write coefficient C: ");
+        
+            bool Ac = false;
+            bool Bc = false;
+            bool Cc = false;
+            double A = 0;
+            double B = 0;
+            double C = 0;
+           Console.Title = ("Elkhimova-irina ICS5-33B");
+
+
+            if (args != null && args.Length == 3)
+            {
+                Ac = double.TryParse(args[0], out A);
+                Bc = double.TryParse(args[1], out B);
+                Cc = double.TryParse(args[2], out C);
+            }
+
+            if (!Ac || !Bc || !Cc)
+            {
+                if (!Ac)
+                 A =ReadDouble("Write coefficient A: ");
+                if(!Bc)
+                 B = ReadDouble("Write coefficient B: ");
+                if(!Cc)
+                 C = ReadDouble("Write coefficient C: ");
+            }
+
             if (A == 0)
             {
 
@@ -53,13 +76,13 @@ namespace lab1
             {
                 double dis = System.Math.Pow(B, 2) - 4 * A * C;
 
-      
+
 
                 if (dis > 0)
                 {
                     double y1 = (-B + Math.Sqrt(dis)) / (2 * A);
                     double y2 = (-B - Math.Sqrt(dis)) / (2 * A);
-                    
+
                     if ((y1 == 0) && (y2 == 0))
                     {
                         double x = 0;
