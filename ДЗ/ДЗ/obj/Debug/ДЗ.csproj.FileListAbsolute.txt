@@ -1,0 +1,9 @@
+D:\ДЗ\ДЗ\obj\Debug\ДЗ.csprojAssemblyReference.cache
+D:\ДЗ\ДЗ\obj\Debug\ДЗ.Form1.resources
+D:\ДЗ\ДЗ\obj\Debug\ДЗ.Properties.Resources.resources
+D:\ДЗ\ДЗ\obj\Debug\ДЗ.csproj.GenerateResource.cache
+D:\ДЗ\ДЗ\bin\Debug\ДЗ.exe.config
+D:\ДЗ\ДЗ\bin\Debug\ДЗ.exe
+D:\ДЗ\ДЗ\bin\Debug\ДЗ.pdb
+D:\ДЗ\ДЗ\obj\Debug\ДЗ.exe
+D:\ДЗ\ДЗ\obj\Debug\ДЗ.pdb
